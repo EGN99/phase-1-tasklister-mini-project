@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     form.reset();
   })
 });
+
 function addToDo(){
 
   // Get the input text from the input field and save it in a variable
@@ -21,4 +22,6 @@ function addToDo(){
   let itemList = document.createElement('li');
   itemList.textContent = todo;
   itemList.textContent = `${todo} `;
+
+  document.getElementById('tasks').appendChild(itemList);
 }
